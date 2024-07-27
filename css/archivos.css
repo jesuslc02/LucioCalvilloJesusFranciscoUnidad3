@@ -1,0 +1,176 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Color de fondo suave */
+}
+
+/* Estilos del encabezado */
+.university-header {
+    background-color: #005f20; /* Verde fuerte */
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    justify-content: center;
+}
+
+.logo {
+    width: 100px; /* Ajuste del tamaño del logo */
+    height: auto;
+    margin-right: 15px;
+}
+
+/* Estilos del contenedor principal */
+.container {
+    margin: 20px;
+    padding: 20px;
+    background-color: white; /* Fondo blanco para el formulario */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #005f20; /* Verde fuerte */
+    margin-top: 0;
+}
+
+/* Estilos del formulario */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+input[type="file"] {
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #005f20; /* Verde fuerte */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #004d1a; /* Verde más oscuro */
+}
+
+/* Estilos para los enlaces */
+a {
+    text-decoration: none;
+    color: #005f20; /* Verde fuerte */
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+a:hover {
+    background-color: #e0e0e0; /* Color de fondo en hover */
+    color: #005f20; /* Verde fuerte */
+}
+
+a:active {
+    background-color: #b0b0b0; /* Color de fondo cuando está activo */
+    color: #003d14; /* Verde más oscuro */
+}
+
+a:visited {
+    color: #003d14; /* Verde más oscuro para enlaces visitados */
+}
+
+/* Estilos para el contenedor de archivos */
+.files-container {
+    margin: 20px;
+}
+
+.files-container ul {
+    list-style: none;
+    padding: 0;
+}
+
+.files-container li {
+    margin: 10px 0;
+}
+
+.files-container a {
+    color: #005f20; /* Verde fuerte */
+}
+
+.files-container a.delete {
+    color: #d9534f; /* Rojo para el enlace de eliminar */
+}
+
+.files-container a.delete:hover {
+    color: #c9302c; /* Rojo más oscuro en hover */
+}
+
+/* Estilos de los elementos en la página principal */
+h1, h3 {
+    color: #005f20; /* Verde fuerte */
+}
+
+.header {
+    text-align: center;
+    margin: 20px;
+}
+
+/* Estilos de la sección de carreras */
+.carreras-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.carrera {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 200px;
+}
+
+.carrera img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #005f20; /* Verde fuerte */
+}
+
+.carrera h3 {
+    margin: 10px;
+    padding: 0 10px;
+    color: #005f20; /* Verde fuerte */
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .carrera {
+        width: 100%;
+    }
+
+    .university-header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
